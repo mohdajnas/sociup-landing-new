@@ -84,11 +84,11 @@ export default function Calculator() {
             <div className={styles.resultBox}>
               <p className={styles.resultLabel}>Estimated Investment</p>
               <h3 className={styles.resultValue}>
-                {selectedServices.length > 0 ? `$${calculateEstimate().toLocaleString()}+` : '$0'}
+                {selectedServices.length > 0 ? `₹${calculateEstimate().toLocaleString()}+` : '₹0'}
               </h3>
               <p className={styles.resultNote}>*This is a rough estimate. Final pricing depends on project scope.</p>
               
-              <a href={`mailto:hello@sociup.in?subject=Request%20for%20Formal%20Quote&body=Hi%20SOCIUP%20team,%0D%0A%0D%0AI%20used%20your%20project%20estimator%20and%20would%20like%20to%20request%20a%20formal%20quote.%0D%0A%0D%0ASelected%20Services:%20${encodeURIComponent(selectedServices.map(s => services.find(serv => serv.id === s)?.label).join(', '))}%0D%0ATimeline:%20${encodeURIComponent(timeline)}%0D%0AEstimated%20Investment:%20$${calculateEstimate().toLocaleString()}%2B%0D%0A%0D%0APlease%20let%20me%20know%20the%20next%20steps.%0D%0A%0D%0AThanks!`} className={styles.submitBtn} style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>
+              <a href={`mailto:hello@sociup.in?subject=Request%20for%20Formal%20Quote&body=Hi%20SOCIUP%20team,%0D%0A%0D%0AI%20used%20your%20project%20estimator%20and%20would%20like%20to%20request%20a%20formal%20quote.%0D%0A%0D%0ASelected%20Services:%20${encodeURIComponent(selectedServices.map(s => services.find(serv => serv.id === s)?.label).join(', '))}%0D%0ATimeline:%20${encodeURIComponent(timeline)}%0D%0AEstimated%20Investment:%20%E2%82%B9${calculateEstimate().toLocaleString()}%2B%0D%0A%0D%0APlease%20let%20me%20know%20the%20next%20steps.%0D%0A%0D%0AThanks!`} className={styles.submitBtn} style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>
                 Request Formal Quote <ChevronRight size={18} />
               </a>
             </div>
