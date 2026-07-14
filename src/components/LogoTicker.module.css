@@ -35,10 +35,27 @@
 
 .right {
   display: flex;
-  align-items: center;
-  gap: 80px;
+  overflow: hidden;
+  white-space: nowrap;
   flex: 1;
-  justify-content: flex-end;
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.marqueeContent {
+  display: flex;
+  gap: 80px;
+  animation: marquee 15s linear infinite;
+  min-width: max-content;
+}
+
+.marqueeContent:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-50% - 40px)); } /* Subtract half the gap (40px) to make the loop seamless */
 }
 
 .logo {
@@ -66,8 +83,7 @@
     justify-content: center;
   }
   .right {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px;
+    width: 100%;
+    margin-top: 10px;
   }
 }

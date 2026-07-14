@@ -188,10 +188,10 @@
   .bottomSection {
     flex-direction: column;
     gap: 20px;
-    align-items: flex-start;
+    align-items: center;
   }
   .legal {
-    width: 100%;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 24px;
   }
 }
