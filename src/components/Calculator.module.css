@@ -198,6 +198,7 @@
     font-size: 32px;
   }
   .calculatorBox {
+    display: flex;
     flex-direction: column;
     padding: 30px;
     gap: 40px;

@@ -180,15 +180,16 @@
   .container {
     padding: 0 20px;
   }
-  .header {
+  .contentRow {
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
   }
   .title {
     font-size: 32px;
+    flex-wrap: wrap;
   }
-  .grid {
+  .servicesGrid {
     grid-template-columns: 1fr;
     gap: 20px;
   }
