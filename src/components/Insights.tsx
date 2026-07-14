@@ -27,9 +27,9 @@ export default async function Insights() {
           
           <div className={styles.titleRow}>
             <h2 className={styles.title}>Latest thinking.</h2>
-            <button className={styles.viewAllBtn}>
+            <a href="mailto:hello@sociup.in?subject=Inquiry:%20Insights%20and%20Articles&body=Hi%20SOCIUP%20team,%0D%0A%0D%0AI%20was%20reading%20your%20insights%20and..." className={styles.viewAllBtn} style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center' }}>
               View All Articles <ArrowUpRight size={16} />
-            </button>
+            </a>
           </div>
         </div>
 

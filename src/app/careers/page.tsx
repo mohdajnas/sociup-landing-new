@@ -31,7 +31,7 @@ export default function Careers() {
                     <span className={styles.tag}>{job.location}</span>
                   </div>
                 </div>
-                <button className={styles.applyBtn}>Apply Now</button>
+                <a href={`mailto:hello@sociup.in?subject=${encodeURIComponent(`Application for ${job.title}`)}&body=${encodeURIComponent(`Hi SOCIUP team,\n\nI am writing to apply for the ${job.title} position. Please find my portfolio link and resume attached.\n\nBest regards,`)}`} className={styles.applyBtn} style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>Apply Now</a>
               </div>
               <p className={styles.jobDescription}>{job.description}</p>
             </div>

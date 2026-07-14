@@ -88,9 +88,9 @@ export default function Calculator() {
               </h3>
               <p className={styles.resultNote}>*This is a rough estimate. Final pricing depends on project scope.</p>
               
-              <button className={styles.submitBtn}>
+              <a href={`mailto:hello@sociup.in?subject=Request%20for%20Formal%20Quote&body=Hi%20SOCIUP%20team,%0D%0A%0D%0AI%20used%20your%20project%20estimator%20and%20would%20like%20to%20request%20a%20formal%20quote.%0D%0A%0D%0ASelected%20Services:%20${encodeURIComponent(selectedServices.map(s => services.find(serv => serv.id === s)?.label).join(', '))}%0D%0ATimeline:%20${encodeURIComponent(timeline)}%0D%0AEstimated%20Investment:%20$${calculateEstimate().toLocaleString()}%2B%0D%0A%0D%0APlease%20let%20me%20know%20the%20next%20steps.%0D%0A%0D%0AThanks!`} className={styles.submitBtn} style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>
                 Request Formal Quote <ChevronRight size={18} />
-              </button>
+              </a>
             </div>
           </div>
         </div>

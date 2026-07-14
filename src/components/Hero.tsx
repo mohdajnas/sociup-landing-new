@@ -36,18 +36,16 @@ export default function Hero() {
             
             <div className={styles.ctaSection}>
               <p className={styles.description}>
-                Branding<br />
-                Mobile & Web App Design<br />
-                for Startups and Giants
+                Building digital products, brands, and experiences that connect with the world.
               </p>
               
               <div className={styles.actions}>
-                <button className={styles.btnPrimary}>
+                <a href="https://www.instagram.com/sociup.in" target="_blank" rel="noopener noreferrer" className={styles.btnPrimary} style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>
                   View Projects <ArrowUpRight size={18} />
-                </button>
-                <button className={styles.btnSecondary}>
+                </a>
+                <a href="mailto:hello@sociup.in?subject=Inquiry:%20Let's%20build%20something%20great&body=Hi%20SOCIUP%20team,%0D%0A%0D%0AI%20would%20like%20to%20discuss%20a%20potential%20project%20with%20you.%20Please%20let%20me%20know%20the%20best%20time%20to%20connect.%0D%0A%0D%0AThanks!" className={styles.btnSecondary} style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>
                   Reach Out <ArrowUpRight size={18} />
-                </button>
+                </a>
               </div>
             </div>
           </div>

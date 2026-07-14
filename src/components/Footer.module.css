@@ -151,3 +151,47 @@
 .legalLink:hover {
   color: white;
 }
+
+@media (max-width: 1024px) {
+  .ctaText {
+    font-size: 64px;
+  }
+  .massiveText {
+    font-size: 15vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding-top: 60px;
+  }
+  .container {
+    padding: 0 20px;
+  }
+  .topSection {
+    flex-direction: column;
+    gap: 60px;
+  }
+  .cta {
+    max-width: 100%;
+  }
+  .ctaText {
+    font-size: 48px;
+  }
+  .linksGrid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .massiveText {
+    font-size: 22vw;
+  }
+  .bottomSection {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  .legal {
+    width: 100%;
+    justify-content: space-between;
+  }
+}

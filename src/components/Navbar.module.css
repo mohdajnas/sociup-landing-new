@@ -109,3 +109,84 @@
   height: 100%;
   object-fit: cover;
 }
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.mobileMenuToggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text-light);
+  cursor: pointer;
+  padding: 8px;
+}
+
+.mobileDropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: var(--bg-dark);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding: 20px;
+  flex-direction: column;
+  gap: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.mobileLink {
+  color: var(--text-light);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+@media (max-width: 1024px) {
+  .links {
+    display: none;
+  }
+  
+  .mobileMenuToggle {
+    display: flex;
+  }
+
+  .mobileDropdown {
+    display: flex;
+  }
+
+  .bookBtn {
+    font-size: 12px;
+    padding: 4px 12px 4px 4px;
+  }
+  
+  .avatarWrapper {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+  
+  .bookBtn {
+    display: none; /* Hide book btn on very small screens to save space, rely on mobile menu or keep it? Let's keep it but make it icon only maybe? Actually let's just keep it small */
+    display: flex; 
+  }
+}
+@media (max-width: 480px) {
+  .btnText {
+    display: none;
+  }
+  .bookBtn {
+    padding: 6px;
+  }
+}

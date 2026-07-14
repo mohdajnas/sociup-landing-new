@@ -9,9 +9,9 @@ export default function Footer() {
         <div className={styles.topSection}>
           <div className={styles.cta}>
             <h2 className={styles.ctaText}>Let's build<br />something great.</h2>
-            <button className={styles.talkBtn}>
+            <a href="mailto:hello@sociup.in?subject=Let's%20build%20something%20great&body=Hi%20SOCIUP%20team,%0D%0A%0D%0AI%20would%20like%20to%20get%20in%20touch%20regarding...%0D%0A%0D%0AThanks!" className={styles.talkBtn} style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center' }}>
               Get in touch <ArrowUpRight size={20} />
-            </button>
+            </a>
           </div>
           
           <div className={styles.linksGrid}>
@@ -32,7 +32,6 @@ export default function Footer() {
             <div className={styles.linkColumn}>
               <h4 className={styles.colTitle}>Contact</h4>
               <a href="mailto:hello@sociup.in" className={styles.link}>hello@sociup.in</a>
-              <a href="https://www.instagram.com/sociup.in" className={styles.link} target="_blank" rel="noopener noreferrer">www.instagram.com/sociup.in</a>
               <a href="tel:+919745322113" className={styles.link}>+91 9745322113</a>
             </div>
           </div>
