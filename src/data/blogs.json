@@ -1,0 +1,16 @@
+[
+  {
+    "slug": "digital-identity-web3",
+    "title": "The Future of Digital Identity in Web3",
+    "category": "Design Strategy",
+    "image": "/work1.png",
+    "content": "As we move further into the decentralized web, digital identity becomes more than just a username and password. It's about owning your data, your reputation, and your brand across multiple platforms without relying on a centralized authority.\n\nIn Web3, branding is fundamentally different. It requires a shift from 'telling' users who you are to 'proving' it through verifiable credentials and on-chain actions. Our latest research shows that brands that adopt a decentralized identity strategy see a 40% increase in user trust and long-term engagement.\n\nThis article explores the core tenets of Web3 branding and how you can position your digital agency to lead the charge."
+  },
+  {
+    "slug": "search-first-architecture",
+    "title": "How to Build a Search-First Architecture",
+    "category": "Engineering",
+    "image": "/work3.png",
+    "content": "A beautiful website is useless if no one can find it. Search-First Architecture (SFA) is a paradigm that prioritizes discoverability and performance from day one, rather than treating SEO as an afterthought.\n\nBy leveraging Server-Side Rendering (SSR), Semantic HTML, and edge caching, we can build digital experiences that load in under a second and rank at the top of search engine results pages (SERPs).\n\nIn this guide, we break down the technical requirements for SFA, including schema markup strategies, Core Web Vitals optimization, and why headless CMS integrations are the future of scalable content delivery."
+  }
+]

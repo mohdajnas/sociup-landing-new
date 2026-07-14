@@ -1,0 +1,134 @@
+.main {
+  min-height: 100vh;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 120px 24px 60px;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.header {
+  margin-bottom: 60px;
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: 500;
+  margin-bottom: 32px;
+  transition: opacity 0.2s;
+}
+
+.backLink:hover {
+  opacity: 0.7;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  margin-bottom: 16px;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: #a1a1aa;
+  max-width: 600px;
+}
+
+.adminNote {
+  margin-top: 16px;
+  padding: 12px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-left: 4px solid #3b82f6;
+  font-size: 0.9rem;
+  color: #93c5fd;
+  border-radius: 4px;
+}
+
+.jobList {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.jobCard {
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 32px;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.jobCard:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  transform: translateY(-2px);
+}
+
+.jobHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.jobTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.tags {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.jobDescription {
+  color: #a1a1aa;
+  line-height: 1.6;
+}
+
+.applyBtn {
+  background-color: var(--text-light);
+  color: var(--bg-dark);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.applyBtn:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  
+  .jobHeader {
+    flex-direction: column;
+    gap: 16px;
+  }
+}

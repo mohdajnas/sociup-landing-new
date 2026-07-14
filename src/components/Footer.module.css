@@ -1,0 +1,153 @@
+.footer {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  padding: 100px 0 40px 0;
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
+  margin-top: -32px;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.topSection {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.ctaText {
+  font-size: 64px;
+  line-height: 1.1;
+  font-weight: 500;
+  letter-spacing: -2px;
+}
+
+.talkBtn {
+  background-color: var(--primary-red);
+  color: white;
+  padding: 16px 32px;
+  border-radius: 40px;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 0 4px 20px rgba(227, 56, 39, 0.3);
+}
+
+.talkBtn:hover {
+  background-color: #c93021;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(227, 56, 39, 0.5);
+}
+
+.linksGrid {
+  display: flex;
+  gap: 80px;
+}
+
+.linkColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.colTitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: #888;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.link {
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.link:hover {
+  color: var(--primary-red);
+}
+
+.massiveTextWrapper {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+}
+
+.massiveText {
+  font-size: 18vw;
+  line-height: 0.8;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  user-select: none;
+}
+
+.bottomSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  letter-spacing: -0.5px;
+}
+
+.logoIcon {
+  color: var(--primary-red);
+}
+
+.registered {
+  font-size: 10px;
+  vertical-align: super;
+  font-weight: 400;
+  color: #666;
+}
+
+.copyright {
+  font-size: 14px;
+  color: #888;
+}
+
+.legal {
+  display: flex;
+  gap: 24px;
+}
+
+.legalLink {
+  font-size: 14px;
+  color: #888;
+  transition: color 0.2s ease;
+}
+
+.legalLink:hover {
+  color: white;
+}
