@@ -1,4 +1,13 @@
+import Image from 'next/image';
 import styles from './LogoTicker.module.css';
+
+const logos = [
+  { src: '/brand-logo/1.png', alt: 'Brand 1' },
+  { src: '/brand-logo/2.png', alt: 'Brand 2' },
+  { src: '/brand-logo/3.png', alt: 'Brand 3' },
+  { src: '/brand-logo/4.png', alt: 'Brand 4' },
+  { src: '/brand-logo/5.png', alt: 'Brand 5' },
+];
 
 export default function LogoTicker() {
   return (
@@ -15,31 +24,17 @@ export default function LogoTicker() {
         <div className={styles.right}>
           <div className={styles.marqueeContent}>
             {/* Set 1 */}
-            <div className={styles.logo}>
-              <span style={{fontWeight: 900, fontSize: '20px', letterSpacing: '-1px'}}>RedBull</span>
-            </div>
-            <div className={styles.logo}>
-              <span style={{fontWeight: 900, fontSize: '24px', letterSpacing: '-2px'}}>JD</span>
-            </div>
-            <div className={styles.logo}>
-              <span style={{fontWeight: 700, fontSize: '18px', letterSpacing: '1px'}}>XBOX</span>
-            </div>
-            <div className={styles.logo}>
-              <span style={{fontWeight: 800, fontSize: '20px', color: '#ff7a59'}}>HubSpot</span>
-            </div>
+            {logos.map((logo, index) => (
+              <div key={`set1-${index}`} className={styles.logo}>
+                <Image src={logo.src} alt={logo.alt} width={120} height={40} style={{ objectFit: 'contain' }} />
+              </div>
+            ))}
             {/* Set 2 (Duplicated for seamless loop) */}
-            <div className={styles.logo}>
-              <span style={{fontWeight: 900, fontSize: '20px', letterSpacing: '-1px'}}>RedBull</span>
-            </div>
-            <div className={styles.logo}>
-              <span style={{fontWeight: 900, fontSize: '24px', letterSpacing: '-2px'}}>JD</span>
-            </div>
-            <div className={styles.logo}>
-              <span style={{fontWeight: 700, fontSize: '18px', letterSpacing: '1px'}}>XBOX</span>
-            </div>
-            <div className={styles.logo}>
-              <span style={{fontWeight: 800, fontSize: '20px', color: '#ff7a59'}}>HubSpot</span>
-            </div>
+            {logos.map((logo, index) => (
+              <div key={`set2-${index}`} className={styles.logo}>
+                <Image src={logo.src} alt={logo.alt} width={120} height={40} style={{ objectFit: 'contain' }} />
+              </div>
+            ))}
           </div>
         </div>
       </div>
