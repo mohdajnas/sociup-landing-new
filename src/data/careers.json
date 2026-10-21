@@ -1,18 +1,18 @@
 [
   {
     "id": "1",
-    "title": "Senior Product Designer",
-    "department": "Design",
-    "location": "Remote / Hybrid",
+    "title": "Senior Project Manager",
+    "department": "Projects",
+    "location": "On-site / Hybrid",
     "type": "Full-time",
-    "description": "We are looking for an experienced Product Designer to lead end-to-end design for our client projects."
+    "description": "We are looking for an experienced Project Manager to lead end-to-end delivery for our client ventures."
   },
   {
     "id": "2",
-    "title": "Frontend Engineer",
-    "department": "Engineering",
-    "location": "Remote",
+    "title": "Business Analyst",
+    "department": "Analytics",
+    "location": "Hybrid",
     "type": "Full-time",
-    "description": "Join our engineering team to build scalable, pixel-perfect web applications."
+    "description": "Join our team to build feasibility models and investor reports."
   }
 ]

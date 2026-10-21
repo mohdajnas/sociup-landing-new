@@ -29,8 +29,8 @@ const myriadPro = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "SOCIUP | Next-Gen Design Agency",
-  description: "Next-Gen Design Agency for Growing Brands",
+  title: "SOCIUP | Business Creation Consultancy",
+  description: "End-to-End Business Creation Partner for Investors",
 };
 
 export default function RootLayout({

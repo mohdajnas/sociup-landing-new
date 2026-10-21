@@ -148,10 +148,11 @@
 }
 
 .resultValue {
-  font-size: 64px;
-  font-weight: 500;
-  letter-spacing: -2px;
+  font-size: clamp(30px, 3.2vw, 48px);
+  font-weight: 600;
+  letter-spacing: -1px;
   margin-bottom: 24px;
+  line-height: 1.15;
 }
 
 .resultNote {

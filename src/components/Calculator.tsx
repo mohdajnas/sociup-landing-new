@@ -1,50 +1,34 @@
 'use client';
 
 import { useState } from 'react';
-import { Calculator as CalcIcon, ChevronRight } from 'lucide-react';
+import { ChevronRight } from 'lucide-react';
 import styles from './Calculator.module.css';
 
+const packages = [
+  { id: 'blueprint', label: 'Blueprint', fee: '₹1.5–4 lakh' },
+  { id: 'business-design', label: 'Business Design', fee: '₹5–15 lakh' },
+  { id: 'turnkey', label: 'Turnkey Development', fee: '₹10–30 lakh+' },
+  { id: 'managed-ops', label: 'Managed Operations', fee: '₹1.5–5 lakh per month' },
+  { id: 'partnership', label: 'Partnership', fee: 'Custom quote' },
+  { id: 'custom-scope', label: 'Custom Scope', fee: 'Custom quote' },
+];
+
+const timelines = ['< 1 month', '1-3 months', '3-9 months', '12+ months'];
+
 export default function Calculator() {
-  const [selectedServices, setSelectedServices] = useState<string[]>([]);
-  const [timeline, setTimeline] = useState('1-3 months');
+  const [selectedPackage, setSelectedPackage] = useState<string>('blueprint');
+  const [timeline, setTimeline] = useState<string>('1-3 months');
 
-  const services = [
-    { id: 'branding', label: 'Branding', basePrice: 5000 },
-    { id: 'social', label: 'Social Media', basePrice: 3000 },
-    { id: 'ai', label: 'AI Consultancy', basePrice: 7000 },
-    { id: 'domain', label: 'Domain Reserve', basePrice: 500 },
-    { id: 'automation', label: 'Automation', basePrice: 6000 },
-    { id: 'video', label: 'Video Production', basePrice: 10000 },
-  ];
-
-  const timelines = ['< 1 month', '1-3 months', '3-6 months', '6+ months'];
-
-  const toggleService = (id: string) => {
-    setSelectedServices(prev => 
-      prev.includes(id) ? prev.filter(s => s !== id) : [...prev, id]
-    );
-  };
-
-  const calculateEstimate = () => {
-    const base = selectedServices.reduce((total, id) => {
-      const service = services.find(s => s.id === id);
-      return total + (service?.basePrice || 0);
-    }, 0);
-    
-    // Add a multiplier based on timeline for visual effect
-    let multiplier = 1;
-    if (timeline === '< 1 month') multiplier = 1.5; // Rush fee
-    if (timeline === '6+ months') multiplier = 0.9; // Discount for flexibility
-
-    return Math.round(base * multiplier);
-  };
+  const activePackage = packages.find(p => p.id === selectedPackage) || packages[0];
 
   return (
-    <section id="costing" className={styles.section}>
-      <div className={styles.container}>
+    <section id="packages" className={styles.section}>
+      <div id="costing" className={styles.container}>
         <div className={styles.header}>
-          <h2 className={styles.title}>Estimate your next big project.</h2>
-          <p className={styles.description}>Select the services you need and your ideal timeline to get a rough estimate before we talk.</p>
+          <h2 className={styles.title}>Estimate your business setup investment.</h2>
+          <p className={styles.description}>
+            Select the package you need and your ideal timeline to get indicative planning fees before we talk.
+          </p>
         </div>
 
         <div className={styles.calculatorBox}>
@@ -52,13 +36,14 @@ export default function Calculator() {
             <div className={styles.inputGroup}>
               <label className={styles.label}>1. What do you need?</label>
               <div className={styles.optionsGrid}>
-                {services.map(service => (
+                {packages.map(pkg => (
                   <button 
-                    key={service.id}
-                    className={`${styles.optionBtn} ${selectedServices.includes(service.id) ? styles.active : ''}`}
-                    onClick={() => toggleService(service.id)}
+                    key={pkg.id}
+                    type="button"
+                    className={`${styles.optionBtn} ${selectedPackage === pkg.id ? styles.active : ''}`}
+                    onClick={() => setSelectedPackage(pkg.id)}
                   >
-                    {service.label}
+                    {pkg.label}
                   </button>
                 ))}
               </div>
@@ -70,6 +55,7 @@ export default function Calculator() {
                 {timelines.map(t => (
                   <button 
                     key={t}
+                    type="button"
                     className={`${styles.optionBtn} ${timeline === t ? styles.active : ''}`}
                     onClick={() => setTimeline(t)}
                   >
@@ -82,13 +68,17 @@ export default function Calculator() {
 
           <div className={styles.rightCol}>
             <div className={styles.resultBox}>
-              <p className={styles.resultLabel}>Estimated Investment</p>
+              <p className={styles.resultLabel}>Indicative Fee</p>
               <h3 className={styles.resultValue}>
-                {selectedServices.length > 0 ? `₹${calculateEstimate().toLocaleString()}+` : '₹0'}
+                {activePackage.fee}
               </h3>
-              <p className={styles.resultNote}>*This is a rough estimate. Final pricing depends on project scope.</p>
+              <p className={styles.resultNote}>*Indicative fee only, excluding GST. Final pricing depends on signed scope.</p>
               
-              <a href={`mailto:hello@sociup.in?subject=Request%20for%20Formal%20Quote&body=Hi%20SOCIUP%20team,%0D%0A%0D%0AI%20used%20your%20project%20estimator%20and%20would%20like%20to%20request%20a%20formal%20quote.%0D%0A%0D%0ASelected%20Services:%20${encodeURIComponent(selectedServices.map(s => services.find(serv => serv.id === s)?.label).join(', '))}%0D%0ATimeline:%20${encodeURIComponent(timeline)}%0D%0AEstimated%20Investment:%20%E2%82%B9${calculateEstimate().toLocaleString()}%2B%0D%0A%0D%0APlease%20let%20me%20know%20the%20next%20steps.%0D%0A%0D%0AThanks!`} className={styles.submitBtn} style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>
+              <a 
+                href={`mailto:hello@sociup.in?subject=Request%20for%20Formal%20Quote&body=Hi%20SOCIUP%20team,%0D%0A%0D%0AI%20used%20your%20business%20setup%20estimator%20and%20would%20like%20to%20request%20a%20formal%20quote.%0D%0A%0D%0ASelected%20Package:%20${encodeURIComponent(activePackage.label)}%0D%0ATimeline:%20${encodeURIComponent(timeline)}%0D%0AIndicative%20Fee:%20${encodeURIComponent(activePackage.fee)}%0D%0A%0D%0APlease%20let%20me%20know%20the%20next%20steps.%0D%0A%0D%0AThanks!`} 
+                className={styles.submitBtn} 
+                style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', justifyContent: 'space-between' }}
+              >
                 Request Formal Quote <ChevronRight size={18} />
               </a>
             </div>

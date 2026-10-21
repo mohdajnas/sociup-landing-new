@@ -3,24 +3,24 @@ import styles from './Stats.module.css';
 export default function Stats() {
   const stats = [
     {
-      value: "1%",
-      title: "Expert-Vetted",
-      description: "Recognized in the top 1% of freelancers for consistent quality, trust, and expertise."
+      value: "3",
+      title: "Business Lines",
+      description: "Venture Studio, Turnkey Development, and Managed Operations, supported by optional, selective venture partnerships."
     },
     {
-      value: "30+",
-      title: "Clients served",
-      description: "From startups to giants - each treated like our only one."
+      value: "7",
+      title: "Workflow Stages",
+      description: "Written investor approvals precede every major commitment or budget change."
     },
     {
       value: "100%",
-      title: "Success Score",
-      description: "All 5-star reviews. No compromises. No 'just okay'."
+      title: "Transparent Costs",
+      description: "Itemised budgets. Documented vendor selection. No guaranteed returns."
     },
     {
-      value: "2+",
-      title: "Years of expertise",
-      description: "Deep experience in UX, branding, and growth-driven design for real-world products."
+      value: "5",
+      title: "Service Packages Offered",
+      description: "From opportunity blueprint to turnkey development, managed operations, and venture-building partnerships."
     }
   ];
 
@@ -29,7 +29,7 @@ export default function Stats() {
       <div className={styles.container}>
         <div className={styles.header}>
           <div className={styles.badge}>
-            <span className={styles.square}></span> BY THE NUMBERS
+            <span className={styles.square}></span> BY THE BLUEPRINT
           </div>
         </div>
         

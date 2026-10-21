@@ -8,7 +8,7 @@ export default function Footer() {
       <div className={styles.container}>
         <div className={styles.topSection}>
           <div className={styles.cta}>
-            <h2 className={styles.ctaText}>Let's build<br />something great.</h2>
+            <h2 className={styles.ctaText}>Let's build<br />your business.</h2>
             <a href="mailto:hello@sociup.in?subject=Let's%20build%20something%20great&body=Hi%20SOCIUP%20team,%0D%0A%0D%0AI%20would%20like%20to%20get%20in%20touch%20regarding...%0D%0A%0D%0AThanks!" className={styles.talkBtn} style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center' }}>
               Get in touch <ArrowUpRight size={20} />
             </a>
@@ -32,7 +32,7 @@ export default function Footer() {
             <div className={styles.linkColumn}>
               <h4 className={styles.colTitle}>Contact</h4>
               <a href="mailto:hello@sociup.in" className={styles.link}>hello@sociup.in</a>
-              <a href="tel:+919745322113" className={styles.link}>+91 9745322113</a>
+              <a href="tel:+919895538668" className={styles.link}>+91 9895538668</a>
             </div>
           </div>
         </div>
@@ -45,7 +45,7 @@ export default function Footer() {
           <div className={styles.logo}>
             <Image src="/sociup-white.png" alt="SOCIUP Logo" width={100} height={32} style={{ objectFit: 'contain' }} />
           </div>
-          <p className={styles.copyright}>© {new Date().getFullYear()} SOCIUP Agency. All rights reserved.</p>
+          <p className={styles.copyright}>© 2026 SOCIUP Consultancy. All rights reserved.</p>
           <div className={styles.legal}>
             <a href="#" className={styles.legalLink}>Privacy Policy</a>
             <a href="#" className={styles.legalLink}>Terms of Service</a>

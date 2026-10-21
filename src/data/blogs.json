@@ -1,16 +1,30 @@
 [
   {
-    "slug": "digital-identity-web3",
-    "title": "The Future of Digital Identity in Web3",
-    "category": "Design Strategy",
-    "image": "/work1.png",
-    "content": "As we move further into the decentralized web, digital identity becomes more than just a username and password. It's about owning your data, your reputation, and your brand across multiple platforms without relying on a centralized authority.\n\nIn Web3, branding is fundamentally different. It requires a shift from 'telling' users who you are to 'proving' it through verifiable credentials and on-chain actions. Our latest research shows that brands that adopt a decentralized identity strategy see a 40% increase in user trust and long-term engagement.\n\nThis article explores the core tenets of Web3 branding and how you can position your digital agency to lead the charge."
+    "slug": "how-to-validate-a-kerala-business-idea",
+    "title": "How to Validate a Kerala Business Idea: Feasibility Steps Before You Invest Capital",
+    "category": "Feasibility",
+    "image": "/1.jpg",
+    "content": "Before committing significant capital to a new venture in Kerala, rigorous feasibility analysis is paramount. From market sizing and demographic evaluation to competitor saturation and local regulatory navigation, a documented go/no-go investment framework ensures capital preservation and strategic clarity."
   },
   {
-    "slug": "search-first-architecture",
-    "title": "How to Build a Search-First Architecture",
-    "category": "Engineering",
-    "image": "/work3.png",
-    "content": "A beautiful website is useless if no one can find it. Search-First Architecture (SFA) is a paradigm that prioritizes discoverability and performance from day one, rather than treating SEO as an afterthought.\n\nBy leveraging Server-Side Rendering (SSR), Semantic HTML, and edge caching, we can build digital experiences that load in under a second and rank at the top of search engine results pages (SERPs).\n\nIn this guide, we break down the technical requirements for SFA, including schema markup strategies, Core Web Vitals optimization, and why headless CMS integrations are the future of scalable content delivery."
+    "slug": "break-even-explained-cafe-unit-economics",
+    "title": "Break-Even Explained: Why Every Proposed Café Needs Unit Economics Before Opening Day",
+    "category": "Finance",
+    "image": "/2.jpg",
+    "content": "A high-concept aesthetic cannot overcome weak unit economics. Understanding average ticket size, table turnover rates, cost of goods sold (COGS), labor overhead, and realistic occupancy breakeven thresholds is the difference between an operating business and an expensive lesson."
+  },
+  {
+    "slug": "project-budgets-drift-without-control-gates",
+    "title": "Project budgets drift without control gates. That is why written investor approvals and change orders are essential.",
+    "category": "Governance",
+    "image": "/3.jpg",
+    "content": "Scope creep and unmonitored vendor commitments are the primary culprits in capital drain during turnkey setup. Instituting formal written investor approvals, milestone-tied disbursements, and change-order control gates protects both investor capital and project timelines."
+  },
+  {
+    "slug": "monthly-investor-report-template",
+    "title": "We built a monthly investor report template for new ventures.",
+    "category": "Template",
+    "image": "/4.jpg",
+    "content": "Transparency builds investor confidence. Our standardized monthly reporting dashboard covers P&L tracking, actual vs. budgeted burn, active KPI reviews, SOP compliance scores, and actionable expansion recommendations."
   }
 ]

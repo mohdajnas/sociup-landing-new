@@ -15,8 +15,7 @@ export default function Careers() {
             <ArrowLeft size={20} /> Back to Home
           </Link>
           <h1 className={styles.title}>Join Our Team</h1>
-          <p className={styles.subtitle}>Help us build the next generation of digital experiences.</p>
-          <p className={styles.adminNote}>Admin: To edit these jobs, modify src/data/careers.json</p>
+          <p className={styles.subtitle}>Help investors build, launch, and manage tomorrow's operating businesses.</p>
         </div>
 
         <div className={styles.jobList}>
